@@ -22,7 +22,7 @@ const HomePage = () => {
       }}
     >
       {/* النص */}
-      <Box
+      {/* <Box
         sx={{
           flex: { xs: "1 1 100%", md: "1 1 45%" },
           textAlign: { xs: "center", md: "left" },
@@ -67,7 +67,7 @@ Kom igång  </Button>
 </Link>
 
        
-      </Box>
+      </Box> */}
 
       {/* الصورة */}
       <Box

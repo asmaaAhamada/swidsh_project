@@ -48,7 +48,7 @@ function DrawerAppBar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', bgcolor: theme.palette.background.default, height: '100%' }}>
-      <Typography variant="h6" sx={{ my: 2, color: theme.palette.text.primary }}>
+      <Typography variant="h6" sx={{ my: 2, color: theme.navbar.border }}>
         Investera i Sverige
       </Typography>
       <IconButton color="inherit" onClick={toggleMode} sx={{ mb: 2 }}>
@@ -89,7 +89,7 @@ function DrawerAppBar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav" position="fixed" sx={{ bgcolor: theme.palette.background.paper, color: theme.palette.text.primary }}>
+      <AppBar component="nav" position="fixed" sx={{zIndex: (theme) => theme.zIndex.drawer + 1, bgcolor: theme.palette.background.paper, color: theme.palette.text.primary }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -100,8 +100,8 @@ function DrawerAppBar(props) {
           >
             <MenuIcon />
           </IconButton>
-          <CallMissedIcon fontSize="large" />
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}>
+          <CallMissedIcon fontSize="large" sx={{color: theme.navbar.border}}/>
+          <Typography variant="h6" component="div" sx={{ color: theme.navbar.border,flexGrow: 1, display: { xs: 'none', sm: 'block' } }}>
             Investera i Sverige
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'flex' }, alignItems: 'center' }}>

@@ -36,10 +36,13 @@ function Main() {
         hover: mode === 'light' ? '#e3f2fd' : '#1f1f1f', // عند التحويم
         border: mode === 'light' ? '#1976d2' : '#90caf9',
         span:mode === 'light' ? '#627991ff' : '#ffffff',
-                body: mode === 'light' ? '#c2e0f52c' : '#000000', // لون خلفية  البودي
+                body: mode === 'light' ? '#c2e0f52c' : '#000000',
+                 body1: mode === 'light' ? '#3b4044b2' : '#ffffff',
+                // لون خلفية  البودي
 button:mode === 'light' ? '#ffffff' : '#1976d2',
             Text:mode === 'light' ? '#000000' :'#1976d2' ,  
-               paper: mode === 'light' ? '#ffffff' : '#121212',   // البطاقات
+               paper: mode === 'light' ? '#ffffff' : '#121212', 
+               icon:mode=== 'light' ? '#3b4044b2' : '#1976d2', //ت
 // لون النص مخصص  
 
       },

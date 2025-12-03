@@ -1,12 +1,14 @@
 import React from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
-import Layout from './components/layout'
+import Layout from './components/layout/layout'
 import HomePage from './components/LinkPages/Home/homePage'
 import AboutPage from './components/LinkPages/AboutPage'
-import ProjectsPage from './components/LinkPages/projectsPage'
 import LoginPage from './components/auth/loginPage'
-import SighnPage from './components/auth/sighnPage'
+import SighnPage from './components/auth/regester/sighnPage'
 import WelcomPage from './components/LinkPages/Home/welcomPage'
+import Projects_Page from './components/page.jsx/projects/projectsPage'
+import CreateProject from './components/page.jsx/projects/creatProjects'
+import ProjectDetail from './components/page.jsx/projects/ProjectDetail'
 
 
 export default function App({toggleMode, mode}){
@@ -30,6 +32,9 @@ export default function App({toggleMode, mode}){
     <Route path="/Om" element={<AboutPage />} />
     <Route path="/Logga_in" element={<LoginPage />} />
     <Route path="/Skapa_konto" element={<SighnPage />} />
+        <Route path="/projects" element={<Projects_Page />} />
+<Route path="/create-project" element={<CreateProject />} />
+<Route path="/projects/:id" element={<ProjectDetail />} />
 
 
 </Route>
