@@ -33,7 +33,7 @@ const drawerWidth = 240;
 
 function SidPar(props) {
 
-const pages = ['Dashboard', 'projects', 'Categories','Users'];
+const pages = ['Dashboard', 'projects', 'profileOrgnastion','Users'];
 
   const theme = useTheme();
 
@@ -44,7 +44,7 @@ const iconsMap = {
     Users :<PeopleAltIcon />,
 
   Orders: <ShoppingCartIcon/>,
-  Categories: <CategoryIcon  />,
+  profileOrgnastion: <CategoryIcon  />,
   
 };
 

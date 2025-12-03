@@ -9,6 +9,7 @@ import WelcomPage from './components/LinkPages/Home/welcomPage'
 import Projects_Page from './components/page.jsx/projects/projectsPage'
 import CreateProject from './components/page.jsx/projects/creatProjects'
 import ProjectDetail from './components/page.jsx/projects/ProjectDetail'
+import ProfileOrgnationPage from './components/page.jsx/orgnation/ProfileOrgnationPage'
 
 
 export default function App({toggleMode, mode}){
@@ -35,6 +36,7 @@ export default function App({toggleMode, mode}){
         <Route path="/projects" element={<Projects_Page />} />
 <Route path="/create-project" element={<CreateProject />} />
 <Route path="/projects/:id" element={<ProjectDetail />} />
+<Route path="/profileOrgnastion" element={<ProfileOrgnationPage />} />
 
 
 </Route>
